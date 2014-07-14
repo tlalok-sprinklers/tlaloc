@@ -1,0 +1,22 @@
+<h1>New Station</h1>
+
+<%= form_for :station, url: stations_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+ 
+<!--   <p>
+    <%= f.label :enabled %><br>
+    <%= f.check_box :enabled %>
+  </p>
+  -->
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

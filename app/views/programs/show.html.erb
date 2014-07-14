@@ -1,0 +1,31 @@
+<p>
+  <strong>Title:</strong>
+  <%= @program.name %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @program.description %>
+</p>
+
+
+<h2>Stations</h2>
+<table>
+	<thead>
+		<tr>
+			<th>Station</th>
+			<th>Duration</th>
+			<th>Order</th>
+		</tr>
+	</thead>
+	<tbody>
+
+	<% @program.program_stations.each do |program_station| %>
+		<tr>
+			<td><%= program_station.station.name %></td>
+			<td><%= program_station.duration %></td>
+			<td><%= program_station.order %></td>
+		</tr>
+	<% end %>
+	</tbody>
+</table>

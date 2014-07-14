@@ -1,0 +1,16 @@
+<h1><%= @schedule.name %></h1>
+<p>
+	<%= @schedule.description %>
+
+
+<% @schedule.schedule_stations.each do |schedule_station| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= schedule_station.station_id %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= schedule_station.duration %>
+  </p>
+<% end %>

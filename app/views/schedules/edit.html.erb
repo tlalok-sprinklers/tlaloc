@@ -1,0 +1,16 @@
+<h1>Schedules#edit</h1>
+<p>Find me in app/views/schedules/edit.html.erb</p>
+
+
+
+<% @schedule.schedule_stations.each do |schedule_station| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= schedule_station.station_id %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= schedule_station.duration %>
+  </p>
+<% end %>

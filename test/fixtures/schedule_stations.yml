@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  schedule_id: 
+  station_id: 
+  duration: 1
+  order: 1
+
+two:
+  schedule_id: 
+  station_id: 
+  duration: 1
+  order: 1
